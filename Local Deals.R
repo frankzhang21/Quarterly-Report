@@ -13,12 +13,12 @@ read_local_deal <- function(path){
 }
 
 # Extract paths for local deals files
-local_deal_paths <- list.files("C:/Users/fzhang/Downloads/LOCALDEALS/Local Deals",pattern = "*.csv",full.names = TRUE)
+local_deal_paths <- list.files("C:/Users/fzhang/OneDrive - Travelzoo/Report/Quarterly/LGLD/2019 Q1/Deals-List-View/",pattern = "*.csv",full.names = TRUE)
 
 # Combine all files together and save it in an Excel
 
 map_df(local_deal_paths,read_local_deal) %>% 
-  write_xlsx("H:/Report/Quarterly/2019/Q1/Local Deals/deals.xlsx")
+  write_xlsx("C:/Users/fzhang/OneDrive - Travelzoo/Report/Quarterly/LGLD/2019 Q1/Deals-List-View/deals.xlsx")
 
 # Read csv files for daily revenue and add platform column -------------------
 
@@ -30,10 +30,10 @@ read_daily_revenue <- function(path){
 
 # Extract paths for local deals files
 
-dailyl_revenue_paths <- list.files("C:/Users/fzhang/Downloads/LOCALDEALS/Daily Revenue",pattern = "*.csv",full.names = TRUE)
+dailyl_revenue_paths <- list.files("C:/Users/fzhang/OneDrive - Travelzoo/Report/Quarterly/LGLD/2019 Q1/daily-revenue/",pattern = "*.csv",full.names = TRUE)
 
 # Combine all files together and save it in an Excel
 
 map_df(dailyl_revenue_paths,read_daily_revenue) %>% 
-  write_xlsx("H:/Report/Quarterly/2019/Q1/Local Deals/daily_revenue.xlsx")
+  write_xlsx("C:/Users/fzhang/OneDrive - Travelzoo/Report/Quarterly/LGLD/2019 Q1/daily-revenue/daily_revenue.xlsx")
 

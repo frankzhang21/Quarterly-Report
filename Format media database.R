@@ -19,4 +19,5 @@ for (i in 1:1860) {
 
 final <- rbindlist(a)
 
-write_xlsx(final,"H:/Report/Quarterly/Media/eli/a.xlsx")
+write_xlsx(final,"C:/Users/fzhang/OneDrive - Travelzoo/Report/Quarterly/Media/Client_Name.xlsx")
+
